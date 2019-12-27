@@ -19,7 +19,7 @@ steps:
   inputs:
     targetType: 'inline'
     script: 'Write-Host "##vso[task.setvariable variable=DX_NUGET_PUB;]$(DX_NUGET)"'
-- task: NuGetToolInstaller@1
+
 
 - task: NuGetCommand@2
   inputs:
@@ -28,6 +28,7 @@ steps:
     feedsToUse: 'config'
     nugetConfigPath: 'nuget.config'
 
+- task: NuGetToolInstaller@1
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
