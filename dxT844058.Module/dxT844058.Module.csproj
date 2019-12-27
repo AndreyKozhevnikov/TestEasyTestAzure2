@@ -100,7 +100,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="FunctionalTests\sample.ets" />
-    <None Include="FunctionalTests\WebSample.ets" />
     <None Include="Images\ReadMe.txt" />
     <None Include="ReadMe.txt" />
   </ItemGroup>
@@ -114,6 +113,21 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="DevExpress.ExpressApp">
+      <Version>19.2.5</Version>
+    </PackageReference>
+    <PackageReference Include="DevExpress.ExpressApp.ReportsV2.Win">
+      <Version>19.2.5</Version>
+    </PackageReference>
+    <PackageReference Include="DevExpress.ExpressApp.Validation">
+      <Version>19.2.5</Version>
+    </PackageReference>
+    <PackageReference Include="DevExpress.ExpressApp.Win.All">
+      <Version>19.2.5</Version>
+    </PackageReference>
+    <PackageReference Include="DevExpress.ExpressApp.Xpo">
+      <Version>19.2.5</Version>
+    </PackageReference>
+    <PackageReference Include="DevExpress.Persistent.BaseImpl">
       <Version>19.2.5</Version>
     </PackageReference>
   </ItemGroup>

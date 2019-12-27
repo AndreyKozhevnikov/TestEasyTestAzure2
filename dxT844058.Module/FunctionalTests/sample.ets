@@ -2,6 +2,8 @@
 
 #Application dxT844058.Win
 
+*Action Log In
+
 *Action About...
  
 *Action OK
