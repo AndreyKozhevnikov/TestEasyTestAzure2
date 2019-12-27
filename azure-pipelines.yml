@@ -45,7 +45,7 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
-      $easyTestPath="dxT844058v1.Module\FunctionalTests\"
+      $easyTestPath="dxT844058.Module\FunctionalTests\"
       sqllocaldb start MSSQLLocalDB
       Nuget install DevExpress.EasyTest.TestExecutor -OutputDirectory EasyTest -configfile NuGet.config      
       New-Item -ItemType directory -Path "EasyTest\Bin\"
