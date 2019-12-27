@@ -156,6 +156,9 @@
     <PackageReference Include="DevExpress.ExpressApp.ReportsV2.Win">
       <Version>19.2.5</Version>
     </PackageReference>
+    <PackageReference Include="DevExpress.ExpressApp.Security.Xpo">
+      <Version>19.2.5</Version>
+    </PackageReference>
     <PackageReference Include="DevExpress.ExpressApp.Validation">
       <Version>19.2.5</Version>
     </PackageReference>

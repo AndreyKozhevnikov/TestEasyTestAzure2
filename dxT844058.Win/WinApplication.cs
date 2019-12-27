@@ -47,10 +47,10 @@ namespace dxT844058.Win {
             } else {
                 provider = new XPObjectSpaceProvider(XPObjectSpaceProvider.GetDataStoreProvider(args.ConnectionString, args.Connection, true), false);
             }
-			
-            //if(dxT844058.Module.dxT844058Module.UseIntegratedSecurity) {
-            //    provider = new SecuredObjectSpaceProvider((SecurityStrategyComplex)Security, XPObjectSpaceProvider.GetDataStoreProvider(args.ConnectionString, args.Connection, true), false);
-            //}
+
+            if(dxT844058.Module.dxT844058Module.UseIntegratedSecurity) {
+                provider = new SecuredObjectSpaceProvider((SecurityStrategyComplex)Security, XPObjectSpaceProvider.GetDataStoreProvider(args.ConnectionString, args.Connection, true), false);
+            }
 
             args.ObjectSpaceProviders.Add(provider);
             args.ObjectSpaceProviders.Add(new NonPersistentObjectSpaceProvider(TypesInfo, null));
